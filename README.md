@@ -1,7 +1,8 @@
 # Handwritten Hindi Word Recognition
 
 The original dataset has been taken from the below mentioned site. The link for the data - 
-![](https://archive.ics.uci.edu/ml/datasets/Devanagari+Handwritten+Character+Dataset) Since the dataset was huge, I haven't uploaded it here.
+https://archive.ics.uci.edu/ml/datasets/Devanagari+Handwritten+Character+Dataset
+Since the dataset was huge, I haven't uploaded it here.
 
 This aims at classifying handwritten Hindi letters into 36 classes. The dataset consisted of 61200 32X32 images. Each image was greyscaled. The entire data was divided into three parts training, validation and test set. The model has been currently trained only for the consonants, vowels can also be added.
 
@@ -21,13 +22,12 @@ This aims at classifying handwritten Hindi letters into 36 classes. The dataset 
 4. **Data augmentation** using image data generator class, rotated, shifted, sheared and zoomed
 5. **Convolution neural network** helps in feature extraction
 
+## Limitations
+1. *vyanjans* having a *matra* cannot be segmented
+2. Numerals and *matra* are not included in the dataset and hence can not be determined
+
 ## To run on your local system:
 * Clone the repository
 * Install all dependencies requirments.txt
 * Carefully check on which image you want to run as well as it is in images folder or not.
 * Finally run main.py(driver code).
-
-## Some Examples:
-
-* ![](https://github.com/Bellicose-YB/Devnagiri-Handwritten-Word-Recognition/blob/main/images/lol.JPG)
-* ![](https://github.com/Bellicose-YB/Devnagiri-Handwritten-Word-Recognition/blob/main/images/Capture.PNG)
